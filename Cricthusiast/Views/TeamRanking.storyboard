@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Ranking View Controller-->
+        <scene sceneID="YlJ-Oe-C1P">
+            <objects>
+                <viewController storyboardIdentifier="RankingViewController" id="DLf-oY-ey1" customClass="RankingViewController" customModule="Cricthusiast" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0zf-qo-jPX">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="WpL-He-fmu">
+                                <rect key="frame" x="0.0" y="115" width="393" height="703"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="FsX-qU-alD">
+                                <rect key="frame" x="20" y="69" width="353" height="32"/>
+                                <segments>
+                                    <segment title="Test"/>
+                                    <segment title="ODI"/>
+                                    <segment title="T20"/>
+                                </segments>
+                                <color key="selectedSegmentTintColor" name="primary"/>
+                            </segmentedControl>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Cca-Ty-wwB"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Cca-Ty-wwB" firstAttribute="trailing" secondItem="FsX-qU-alD" secondAttribute="trailing" constant="20" id="0n7-8l-mKt"/>
+                            <constraint firstItem="FsX-qU-alD" firstAttribute="leading" secondItem="Cca-Ty-wwB" secondAttribute="leading" constant="20" id="1fB-2D-r2c"/>
+                            <constraint firstItem="Cca-Ty-wwB" firstAttribute="trailing" secondItem="WpL-He-fmu" secondAttribute="trailing" id="4ks-x8-2WN"/>
+                            <constraint firstItem="WpL-He-fmu" firstAttribute="top" secondItem="FsX-qU-alD" secondAttribute="bottom" constant="15" id="H2i-kJ-2nf"/>
+                            <constraint firstItem="WpL-He-fmu" firstAttribute="leading" secondItem="Cca-Ty-wwB" secondAttribute="leading" id="dDH-f6-0QR"/>
+                            <constraint firstItem="FsX-qU-alD" firstAttribute="top" secondItem="Cca-Ty-wwB" secondAttribute="top" constant="10" id="hdy-tI-hTt"/>
+                            <constraint firstItem="Cca-Ty-wwB" firstAttribute="bottom" secondItem="WpL-He-fmu" secondAttribute="bottom" id="jI8-hh-qql"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="segmentController" destination="FsX-qU-alD" id="Dmb-Uy-Xrh"/>
+                        <outlet property="tableView" destination="WpL-He-fmu" id="yr4-Kg-OpF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5Es-Ey-lus" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4814.5038167938928" y="869.71830985915494"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="primary">
+            <color red="0.050999999046325684" green="0.15299999713897705" blue="0.22400000691413879" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
