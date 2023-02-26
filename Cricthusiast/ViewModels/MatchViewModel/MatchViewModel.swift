@@ -251,7 +251,9 @@ class MatchViewModel{
     
     func fetchDataByTime(date: Date) {
         isLoading = true
-        ServiceHandler.shared.fetchUpcomingMatchFixture {[weak self] results in
+        
+        let endDate = Date().addingTimeInterval(24 * 60 * 60)
+        ServiceHandler.shared.fetchAllFixtures(startDate: date.ISO8601Format(), endDate: endDate.ISO8601Format(), isAscending: true) {[weak self] results in
             guard let self = self else {
                 return
             }

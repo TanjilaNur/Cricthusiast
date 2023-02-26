@@ -222,33 +222,33 @@
             landmarkType = "7">
             <Locations>
                <Location
-                  uuid = "09D20CA8-111F-4C68-A9CB-1FA704345A9D - 3aeab89731f1a966"
+                  uuid = "09D20CA8-111F-4C68-A9CB-1FA704345A9D - 634d8c9518cfcd05"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "Cricthusiast.ServiceHandler.fetchPlayerById(id: Swift.Int, completion: (Swift.Result&lt;Swift.Optional&lt;Cricthusiast.PlayerInfoModel&gt;, Swift.Error&gt;) -&gt; ()) -&gt; ()"
                   moduleName = "Cricthusiast"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/sarwarmiral/Desktop/Cricthusiast/Cricthusiast/Utilities/Services.swift"
+                  urlString = "file:///Users/sarwarmiral/Desktop/Cricthusiast%203/Cricthusiast/Utilities/Services.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "124"
-                  endingLineNumber = "124"
+                  startingLineNumber = "127"
+                  endingLineNumber = "127"
                   offsetFromSymbolStart = "356">
                </Location>
                <Location
-                  uuid = "09D20CA8-111F-4C68-A9CB-1FA704345A9D - e2f1c57de9f345f2"
+                  uuid = "09D20CA8-111F-4C68-A9CB-1FA704345A9D - bb56f17fc0cd2215"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "closure #1 (Swift.Result&lt;Cricthusiast.PlayerInfoDataModel, Swift.Error&gt;) -&gt; () in Cricthusiast.ServiceHandler.fetchPlayerById(id: Swift.Int, completion: (Swift.Result&lt;Swift.Optional&lt;Cricthusiast.PlayerInfoModel&gt;, Swift.Error&gt;) -&gt; ()) -&gt; ()"
                   moduleName = "Cricthusiast"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/sarwarmiral/Desktop/Cricthusiast/Cricthusiast/Utilities/Services.swift"
+                  urlString = "file:///Users/sarwarmiral/Desktop/Cricthusiast%203/Cricthusiast/Utilities/Services.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "126"
-                  endingLineNumber = "126"
+                  startingLineNumber = "129"
+                  endingLineNumber = "129"
                   offsetFromSymbolStart = "100">
                </Location>
             </Locations>
@@ -283,6 +283,86 @@
             startingLineNumber = "37"
             endingLineNumber = "37"
             landmarkName = "pushToLocalNotification(model:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "7A7827A0-2D8C-40B7-A1DE-532E75E34E45"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Cricthusiast/ViewModels/MatchViewModel/MatchViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "256"
+            endingLineNumber = "256"
+            landmarkName = "fetchDataByTime(date:endDate:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "7A7827A0-2D8C-40B7-A1DE-532E75E34E45 - f6bb7145d6853f94"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Cricthusiast.MatchViewModel.fetchDataByTime(date: Foundation.Date, endDate: Foundation.Date) -&gt; ()"
+                  moduleName = "Cricthusiast"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/sarwarmiral/Desktop/Cricthusiast%203/Cricthusiast/ViewModels/MatchViewModel/MatchViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "255"
+                  endingLineNumber = "255"
+                  offsetFromSymbolStart = "156">
+               </Location>
+               <Location
+                  uuid = "7A7827A0-2D8C-40B7-A1DE-532E75E34E45 - d29229557d429731"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;Swift.Optional&lt;Swift.Array&lt;Cricthusiast.FixtureModel&gt;&gt;, Swift.Error&gt;) -&gt; () in Cricthusiast.MatchViewModel.fetchDataByTime(date: Foundation.Date, endDate: Foundation.Date) -&gt; ()"
+                  moduleName = "Cricthusiast"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/sarwarmiral/Desktop/Cricthusiast%203/Cricthusiast/ViewModels/MatchViewModel/MatchViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "255"
+                  endingLineNumber = "255"
+                  offsetFromSymbolStart = "112">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "0A776F28-D82C-4070-B96D-974D57B05E37"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Cricthusiast/ViewModels/MatchViewModel/MatchViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "261"
+            endingLineNumber = "261"
+            landmarkName = "fetchDataByTime(date:endDate:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "FCBBE011-5043-4D10-8CAD-61066EC14686"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Cricthusiast/ViewControllers/TabbarVC/MatchesVCs/MatchDateViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "71"
+            endingLineNumber = "71"
+            landmarkName = "setupBinders()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

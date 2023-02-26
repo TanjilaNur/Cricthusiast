@@ -32,6 +32,7 @@ class RouteManagerFactory {
         let newsStoryboard = UIStoryboard(name: "News", bundle: nil)
         let teamsStoryboard = UIStoryboard(name: "Teams", bundle: nil)
         let rankingStoryboard = UIStoryboard(name: "TeamRanking", bundle: nil)
+        let dateWiseFixtureStoryboard = UIStoryboard(name: "DateWiseFixtures", bundle: nil)
         
         let tabBarController = CustomTabBarController()
         
@@ -50,6 +51,8 @@ class RouteManagerFactory {
         let newsWebViewController = newsStoryboard.instantiateViewController(withIdentifier: RouteConstants.newsWebViewControllerId)
         
         let notificationViewController = homeStoryboard.instantiateViewController(withIdentifier: RouteConstants.notificationViewControllerId)
+        
+        let matchDateViewController = dateWiseFixtureStoryboard.instantiateViewController(withIdentifier: RouteConstants.matchDateViewControllerId)
     
         // Sets the view controllers based on constants
         routeMap = [
@@ -69,7 +72,9 @@ class RouteManagerFactory {
                         
             RouteConstants.newsWebViewControllerId: newsWebViewController,
             
-            RouteConstants.notificationViewControllerId: notificationViewController
+            RouteConstants.notificationViewControllerId: notificationViewController,
+            
+            RouteConstants.matchDateViewControllerId: matchDateViewController
             
         ]
     }
@@ -105,4 +110,6 @@ class RouteConstants {
     static let rankingViewControllerId = "RankingViewController"
     
     static let notificationViewControllerId = "NotificationViewController"
+    
+    static let matchDateViewControllerId = "MatchDateViewController"
 }

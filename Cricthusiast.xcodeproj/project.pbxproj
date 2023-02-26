@@ -18,7 +18,6 @@
 		0117637A29A10717008FC6E3 /* PlayerInfoTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0117637829A10717008FC6E3 /* PlayerInfoTVCell.swift */; };
 		0117637B29A10717008FC6E3 /* PlayerInfoTVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0117637929A10717008FC6E3 /* PlayerInfoTVCell.xib */; };
 		011B4F0E29A5C40200799F81 /* TeamRanking.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 011B4F0D29A5C40200799F81 /* TeamRanking.storyboard */; };
-		012DA99329AB5FE800478DCE /* artboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 012DA99229AB5FE800478DCE /* artboard.storyboard */; };
 		0134FA41299C9E5900A21EDC /* AboutInfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0134FA3F299C9E5900A21EDC /* AboutInfoTableViewCell.swift */; };
 		0134FA42299C9E5900A21EDC /* AboutInfoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0134FA40299C9E5900A21EDC /* AboutInfoTableViewCell.xib */; };
 		0134FA46299C9EA200A21EDC /* GenInfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0134FA44299C9EA200A21EDC /* GenInfoTableViewCell.swift */; };
@@ -113,7 +112,6 @@
 		0117637829A10717008FC6E3 /* PlayerInfoTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerInfoTVCell.swift; sourceTree = "<group>"; };
 		0117637929A10717008FC6E3 /* PlayerInfoTVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlayerInfoTVCell.xib; sourceTree = "<group>"; };
 		011B4F0D29A5C40200799F81 /* TeamRanking.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TeamRanking.storyboard; sourceTree = "<group>"; };
-		012DA99229AB5FE800478DCE /* artboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = artboard.storyboard; sourceTree = "<group>"; };
 		0134FA3F299C9E5900A21EDC /* AboutInfoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutInfoTableViewCell.swift; sourceTree = "<group>"; };
 		0134FA40299C9E5900A21EDC /* AboutInfoTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AboutInfoTableViewCell.xib; sourceTree = "<group>"; };
 		0134FA44299C9EA200A21EDC /* GenInfoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenInfoTableViewCell.swift; sourceTree = "<group>"; };
@@ -346,7 +344,6 @@
 				016A491F29A9F8FA00F4FBE3 /* Teams.storyboard */,
 				0188C9D729A75E0B00FC429A /* News.storyboard */,
 				01E9829029A7519B00E3DEFD /* More.storyboard */,
-				012DA99229AB5FE800478DCE /* artboard.storyboard */,
 				0162280929AB9663002315BF /* DateWiseFixtures.storyboard */,
 			);
 			path = Storyboards;
@@ -692,7 +689,6 @@
 				FA35B5CA298C98030092407C /* Assets.xcassets in Resources */,
 				0117637129A0B620008FC6E3 /* NewsTableViewCell.xib in Resources */,
 				5B5C344529A4B76300575A81 /* Players.storyboard in Resources */,
-				012DA99329AB5FE800478DCE /* artboard.storyboard in Resources */,
 				015E5F4B299E32FC00B2BFB6 /* ScoreCardTVCell.xib in Resources */,
 				0134FA42299C9E5900A21EDC /* AboutInfoTableViewCell.xib in Resources */,
 				0117637B29A10717008FC6E3 /* PlayerInfoTVCell.xib in Resources */,

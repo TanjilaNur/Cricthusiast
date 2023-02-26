@@ -90,9 +90,6 @@
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
-                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="Ib2-ce-WHm">
-                                <rect key="frame" x="178" y="407.66666666666669" width="37" height="37"/>
-                            </activityIndicatorView>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="xuC-GL-lqe">
                                 <rect key="frame" x="10" y="120.66666666666669" width="373" height="32"/>
                                 <segments>
@@ -120,9 +117,7 @@
                             <constraint firstItem="xK8-bA-n5w" firstAttribute="leading" secondItem="Gzz-Bj-tVq" secondAttribute="leading" constant="50" id="Fmc-KD-uU2"/>
                             <constraint firstItem="xuC-GL-lqe" firstAttribute="top" secondItem="gEr-61-nBT" secondAttribute="bottom" constant="10" id="Hgt-EJ-lbj"/>
                             <constraint firstItem="gEr-61-nBT" firstAttribute="height" secondItem="Gzz-Bj-tVq" secondAttribute="height" multiplier="0.13" id="IWI-cL-DCA"/>
-                            <constraint firstItem="Ib2-ce-WHm" firstAttribute="centerY" secondItem="Gzz-Bj-tVq" secondAttribute="centerY" id="Let-iR-NoL"/>
                             <constraint firstItem="gEr-61-nBT" firstAttribute="leading" secondItem="PBc-f8-eoy" secondAttribute="leading" id="M6K-7D-FVR"/>
-                            <constraint firstItem="Ib2-ce-WHm" firstAttribute="centerX" secondItem="Gzz-Bj-tVq" secondAttribute="centerX" id="OXh-FJ-95a"/>
                             <constraint firstItem="xK8-bA-n5w" firstAttribute="centerY" secondItem="Gzz-Bj-tVq" secondAttribute="centerY" id="Q8X-dn-2py"/>
                             <constraint firstItem="xuC-GL-lqe" firstAttribute="leading" secondItem="PBc-f8-eoy" secondAttribute="leading" constant="10" id="Rwu-bH-wns"/>
                             <constraint firstItem="PBc-f8-eoy" firstAttribute="trailing" secondItem="xuC-GL-lqe" secondAttribute="trailing" constant="10" id="bHh-VA-NHO"/>
@@ -133,7 +128,6 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="activityIndicator" destination="Ib2-ce-WHm" id="SMh-au-WG4"/>
                         <outlet property="collectionView" destination="aXT-Jc-0At" id="Z5a-rp-kJM"/>
                         <outlet property="nlImage" destination="xK8-bA-n5w" id="2Ul-Hb-wtf"/>
                         <outlet property="segmentController" destination="xuC-GL-lqe" id="cmd-7v-ttx"/>

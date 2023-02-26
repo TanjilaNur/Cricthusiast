@@ -14,8 +14,7 @@ class MatchViewController: UIViewController {
     @IBOutlet weak var topView: UIView!
     
     @IBOutlet weak var nlImage: UIImageView!
-    
-    @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
+ 
     @IBOutlet var matchTypesButtons: [UIButton]!
     
     @IBOutlet weak var collectionView: UICollectionView!
@@ -82,9 +81,7 @@ class MatchViewController: UIViewController {
                 if isLoading {
                     self.collectionView.alpha = 0
                     self.nlImage.alpha = 0
-                    self.activityIndicator.startAnimating()
                 } else {
-                    self.activityIndicator.stopAnimating()
                     self.nlImage.alpha = 1
                     if self.fixtureModels.isEmpty {
                         self.collectionView.alpha = 0

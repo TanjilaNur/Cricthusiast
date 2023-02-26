@@ -48,23 +48,25 @@ extension MoreViewController: UITableViewDelegate {
             
             navigationController?.pushViewController(teamsVC, animated: true)
             tableView.deselectRow(at: indexPath, animated: true)
+        } else if indexPath.row == 2 {
+            guard let dateWiseFixtureVC = RouteManagerFactory.shared.routes[RouteConstants.matchDateViewControllerId] as? MatchDateViewController else { return }
+            
+            navigationController?.pushViewController(dateWiseFixtureVC, animated: true)
+            tableView.deselectRow(at: indexPath, animated: true)
         }
     }
     
     func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
     }
-    
-//        guard let playerDetailsVC = RouteManager.shared.routes[RouteConstants.playerDetailsViewControllerId] as? PlayerDetailsViewController else { return }
-//        playersTableView.deselectRow(at: indexPath, animated: true)
-//        navigationController?.pushViewController(playerDetailsVC, animated: true)
+
 }
 
 // MARK: - TableView Delegate
 
 extension MoreViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        2
+        3
     }
     
     func setUpCellStyle(_ cell: MoreTableViewCell) {
@@ -94,6 +96,12 @@ extension MoreViewController: UITableViewDataSource {
         case 1 :
             cell.titleLabel.text = "Global Rangkings"
             cell.iconView.image = UIImage(systemName: "chart.bar.xaxis")
+            cell.layer.cornerRadius = 20
+
+            return cell
+        case 2 :
+            cell.titleLabel.text = "Date Wise fixtures"
+            cell.iconView.image = UIImage(systemName: "calendar")
             cell.layer.cornerRadius = 20
 
             return cell
