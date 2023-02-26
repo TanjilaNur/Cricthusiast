@@ -38,15 +38,15 @@ extension MoreViewController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if indexPath.row == 0 {
-            guard let rankingVC = RouteManagerFactory.shared.routes[RouteConstants.rankingViewControllerId] as? RankingViewController else { return }
-            
-            navigationController?.pushViewController(rankingVC, animated: true)
-            tableView.deselectRow(at: indexPath, animated: true)
-            
-        } else if indexPath.row == 1 {
             guard let teamsVC = RouteManagerFactory.shared.routes[RouteConstants.teamsViewControllerId] as? TeamsViewController else { return }
             
             navigationController?.pushViewController(teamsVC, animated: true)
+            tableView.deselectRow(at: indexPath, animated: true)
+            
+        } else if indexPath.row == 1 {
+            guard let rankingVC = RouteManagerFactory.shared.routes[RouteConstants.rankingViewControllerId] as? RankingViewController else { return }
+            
+            navigationController?.pushViewController(rankingVC, animated: true)
             tableView.deselectRow(at: indexPath, animated: true)
         } else if indexPath.row == 2 {
             guard let dateWiseFixtureVC = RouteManagerFactory.shared.routes[RouteConstants.matchDateViewControllerId] as? MatchDateViewController else { return }
