@@ -12,6 +12,9 @@ class MatchDateViewController: UIViewController {
     
     @IBOutlet weak var startDatePicker: UIDatePicker!
     
+    
+    @IBOutlet weak var endDatePicker: UIDatePicker!
+    
     @IBOutlet weak var collectionView: UICollectionView!
     
     let viewModel = MatchViewModel()
@@ -27,7 +30,10 @@ class MatchDateViewController: UIViewController {
         title = "Date Wise Fixtures"
 
         // Do any additional setup after loading the view.
-        viewModel.fetchDataByTime(date: startDatePicker.date)
+        
+        endDatePicker.date = startDatePicker.date.addingTimeInterval(20 * 24 * 60 * 60.0)
+        viewModel.fetchDataByTime(date: startDatePicker.date, finishingDate: endDatePicker.date)
+        
         collectionView.dataSource = self
 
         collectionView.layer.cornerRadius = 30
@@ -58,7 +64,7 @@ class MatchDateViewController: UIViewController {
     }
     
     @IBAction func submitBtnTapped(_ sender: UIButton) {
-        viewModel.fetchDataByTime(date: startDatePicker.date)
+        viewModel.fetchDataByTime(date: startDatePicker.date,finishingDate: endDatePicker.date)
         collectionView.reloadData()
     }
     func setupBinders() {

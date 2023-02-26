@@ -16,6 +16,7 @@ class Connectivity {
 
 class APIHandler {
     static let newsApiKey = "a4b9088d8fcf4acfb7bc0041d63efd13"
+    //3c2608029e3c460db2b1a00000871909
     //a4b9088d8fcf4acfb7bc0041d63efd13
     //2c4f79f6d523420683ad2e558578ae20
     //5f32e275af4d45f4aa6609d4ac880fcc
