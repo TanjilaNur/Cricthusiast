@@ -18,6 +18,7 @@ class TeamSquadViewController: UIViewController {
     @IBOutlet weak var searchTextField: UITextField!
     
     @IBOutlet weak var tableView: UITableView!
+    var teamName = ""
     
     var squadPlayers: [PlayerCellModel] = []
     
@@ -27,6 +28,7 @@ class TeamSquadViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setSearchBarImage()
+        teamNameLabel.text = teamName
         
         topView.clipsToBounds = true
         topView.layer.maskedCorners = [.layerMinXMaxYCorner, .layerMaxXMaxYCorner]

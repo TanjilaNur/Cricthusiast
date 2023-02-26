@@ -114,6 +114,7 @@ extension TeamsViewController: UITableViewDelegate {
         guard let teamSquadVC = RouteManagerFactory.shared.routes[RouteConstants.teamSquadViewControllerId] as? TeamSquadViewController else { return }
 
         teamSquadVC.id = teamModels[indexPath.row].id
+        teamSquadVC.teamName = teamModels[indexPath.row].name ?? ""
         tableView.deselectRow(at: indexPath, animated: true)
         navigationController?.pushViewController(teamSquadVC, animated: true)
     }

@@ -17,9 +17,7 @@ class TeamsViewModel{
     
     var teamSquadModel: [PlayerCellModel] = []
     var queryteamSquadModel: [PlayerCellModel] = []
-    
-    var teamName: String = ""
-    
+        
     func fetchTeamsData(){
         isLoading = true
         
