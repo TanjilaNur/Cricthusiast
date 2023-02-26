@@ -19,24 +19,15 @@ struct PlayerCellDetailsModel {
     let playerPosition: String
 }
 
-struct PlayerCellModel {
-    let id: Int
-    let playerName: String
-    let playerImageUrl: String
-    let playerInfo: String
-
-}
-
 class PlayersViewModel {
     @Published var playerList: [PlayerCellModel] = []
     
     @Published var isFetchingCompleted: Bool = false
     
+    @Published var error: Error?
+    
     
     func fetchPlayersData() {
-        
-        
-        
         isFetchingCompleted = false
         
         let playersFromDatabase = RealmDBManager.shared.read()
@@ -72,6 +63,7 @@ class PlayersViewModel {
                 case .failure(let error):
                     print(error)
                     self.isFetchingCompleted = true
+                    self.error = error
                 }
             }
         } else {

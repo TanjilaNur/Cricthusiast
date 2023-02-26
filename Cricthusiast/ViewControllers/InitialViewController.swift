@@ -16,8 +16,15 @@ class InitialViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
+        NotificationHandler.getAllPendingNotification { notifications in
+            print("PENDING NOTIFICATIONS")
+            dump(notifications)
+        }
+        
+        
         viewModel.fetchPlayersData()
         setupBinders()
+        print("")
         
     }
     
@@ -28,7 +35,7 @@ class InitialViewController: UIViewController {
             
             if isFetchingCompleted {
                 DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
-                    self.navigationController?.pushViewController(RouteManager.shared.routes[RouteConstants.tabbarViewControllerId]!, animated: true)
+                    self.navigationController?.pushViewController(RouteManagerFactory.shared.routes[RouteConstants.tabbarViewControllerId]!, animated: true)
                 }
             }
         }.store(in: &cancellables)

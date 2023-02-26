@@ -18,10 +18,12 @@ struct MatchInfoTVCellModel {
     let elected: String
     let status: String
     let note: String
+    
     let manOfMatch: String
     let manOfMatchId: Int
     let manOfMatchImage : String
     let manOfmatchPosition : String
+    
     let firstUmpire: String
     let secondUmpire: String
     let tvUmpire: String
@@ -52,6 +54,7 @@ class MatchDetailsViewModel {
 
     var matchNote:String?
     
+    var startTime: String?
     
     @Published var isLoading = false
     
@@ -67,11 +70,11 @@ class MatchDetailsViewModel {
     var ltSquadCellModels: [SquadCollectionViewCellModel] = []
     var vtSquadCellModels: [SquadCollectionViewCellModel] = []
     
+    @Published var error: Error?
+    
     @Published var finalSquadModel: [SquadCollectionViewCellModel] = []
     @Published var teamNames: [String] = []
     @Published var isRecent: Bool?
-    
-    @Published var error: Error?
     
     private func fetchFixtureDetailsFrom(id: Int, completion: @escaping (Result<FixtureInfoModel?,Error>) -> ()) {
         self.isLoading = true
@@ -80,24 +83,34 @@ class MatchDetailsViewModel {
 
             switch result {
             case .success(let data):
-                completion(.success(data))
                 
                 self.matchTitle = "\(data?.league?.name ?? ""),\(data?.season?.name ?? "")"
                 self.ltFlagUrl = data?.localteam?.imagePath
                 self.vtFlagUrl = data?.visitorteam?.imagePath
                 self.ltCCode = data?.localteam?.code
                 self.vtCCode = data?.visitorteam?.code
-                self.ltScore = data?.runs?.first?.score?.description
-                self.vtScore = data?.runs?.last?.score?.description
-                self.ltWickets = data?.runs?.first?.wickets?.description
-                self.vtWickets = data?.runs?.last?.wickets?.description
-                self.ltOver = data?.runs?.first?.overs?.description
-                self.vtOver = data?.runs?.last?.overs?.description
+                self.startTime = data?.startingAt
+                if (data?.runs?.count ?? 0 > 1){
+                    self.ltScore = data?.runs?.first?.score?.description
+                    self.vtScore = data?.runs?.last?.score?.description
+                    self.ltWickets = "/\(data?.runs?.first?.wickets?.description ?? "")"
+                    self.vtWickets = "/\(data?.runs?.last?.wickets?.description ?? "")"
+                    self.ltOver = data?.runs?.first?.overs?.description
+                    self.vtOver = data?.runs?.last?.overs?.description
+                } else {
+                    self.ltScore = data?.runs?.first?.score?.description
+                    self.vtScore = ""
+                    self.ltWickets = "/\(data?.runs?.first?.wickets?.description ?? "")"
+                    self.vtWickets = ""
+                    self.ltOver = data?.runs?.first?.overs?.description
+                    self.vtOver = ""
+                }
                 self.matchNote = data?.note
-                
+                completion(.success(data))
                 self.isLoading = false
             case .failure(let error):
                 self.isLoading = false
+                self.error = error
                 print("Error found \(error)")
                 completion(.failure(error))
             }
@@ -116,17 +129,18 @@ class MatchDetailsViewModel {
                 
                 if data?.status != .ns {
                     self.isRecent = true
+                    guard let firstTeamRuns = data?.runs?.first else { return  }
                     
                     let ltSquad = data?.lineup?.filter({ player in
                         player.lineup?.teamID == data?.runs?.first?.teamID
                     })
-                    
+                    let visitorTeamId = (firstTeamRuns.team?.code ?? "") == (data?.visitorteam?.code ?? "") ? data?.localteam?.id ?? -1 : data?.visitorteam?.id ?? -1
                     let vtSquad = data?.lineup?.filter({ player in
-                        player.lineup?.teamID == data?.runs?.last?.teamID
+                        player.lineup?.teamID == visitorTeamId
                     })
                     
                     let localTeamName = data?.runs?.first?.team?.name ?? ""
-                    let visitorTeamName = data?.runs?.last?.team?.name ?? ""
+                    let visitorTeamName = (firstTeamRuns.team?.code ?? "") == (data?.visitorteam?.code ?? "") ? data?.localteam?.name ?? "" : data?.visitorteam?.name ?? ""
                     
                     self.teamNames = [localTeamName,visitorTeamName]
                     
@@ -155,7 +169,9 @@ class MatchDetailsViewModel {
                 }
                 
             case .failure(let error):
+                self.error = error
                 print(error)
+                
             }
         }
     }
@@ -180,7 +196,7 @@ class MatchDetailsViewModel {
             switch result {
             case .success(let infoTVCellModel):
                 guard let infoTVCellModel = infoTVCellModel else { return }
-                
+                self.startTime = infoTVCellModel.startingAt
                 self.matchInfoTVCellModel =
                 MatchInfoTVCellModel(
                     leagueName: infoTVCellModel.league?.name ?? "N/A",
@@ -220,6 +236,7 @@ class MatchDetailsViewModel {
             }
             switch result {
             case .success(let data):
+                print(data?.status)
                 if data?.status == .finished {
                     self.isRecent = true
                     
@@ -247,7 +264,7 @@ class MatchDetailsViewModel {
                     })
                     
                     let ltCellBattingModels = localTeamBatting?.compactMap({ batting in
-                        ScoreTableViewCellModel(playerTeamName: localTeamName, playerId: batting.playerID ?? -1, playerImageUrl: batting.batsman?.imagePath ?? "", playerName: batting.batsman?.lastname ?? "", playerOutNote: "", stackInfos: [
+                        ScoreTableViewCellModel(playerTeamName: localTeamName, playerId: batting.playerID ?? -1, playerImageUrl: batting.batsman?.imagePath ?? "", playerName: batting.batsman?.lastname ?? "", playerOutNote: batting.result?.name ?? "", stackInfos: [
                             batting.score?.description,
                             batting.ball?.description,
                             batting.fourX?.description,
@@ -261,7 +278,7 @@ class MatchDetailsViewModel {
                             playerTeamName: visitorTeamName, playerId: batting.playerID ?? -1,
                             playerImageUrl: batting.batsman?.imagePath ?? "",
                             playerName: batting.batsman?.lastname ?? "",
-                            playerOutNote: "",
+                            playerOutNote: batting.result?.name ?? "",
                             stackInfos: [
                                 batting.score?.description,
                                 batting.ball?.description,
@@ -313,32 +330,37 @@ class MatchDetailsViewModel {
                     self.isRecent = false
                 } else {
                     self.isRecent = true
-                    //                let localTeamName = ltScoreTVCellModels.first?.first
                     guard let runs = data?.runs, let firstTeamRuns = runs.first else { return }
                     let localTeamName = firstTeamRuns.team?.name ?? ""
                     let localTeamScore = "\(firstTeamRuns.score?.description ?? "")/\(firstTeamRuns.wickets?.description ?? "")"
                     
-                    var visitorTeamName =  (firstTeamRuns.team?.code ?? "") == (data?.visitorteam?.code ?? "") ? data?.localteam?.name ?? "" : data?.visitorteam?.name ?? ""
+                    let visitorTeamName =  (firstTeamRuns.team?.code ?? "") == (data?.visitorteam?.code ?? "") ? data?.localteam?.name ?? "" : data?.visitorteam?.name ?? ""
                     var visitorTeamScore = "Yet to bat"
                     
+                    let visitorTeamCode = (firstTeamRuns.team?.code ?? "") == (data?.visitorteam?.code ?? "") ? data?.localteam?.code ?? "" : data?.visitorteam?.code ?? ""
+                    
+                    self.teamNames = [localTeamName,visitorTeamName]
+                    
+                    var visitorTeamBatting: [Batting]?
+                    var localTeamBowling: [Bowling]?
                     if (runs.count == 2) {
                         let secondTeamRuns = runs[1]
                         visitorTeamScore = "\(secondTeamRuns.score?.description ?? "")/\(secondTeamRuns.wickets?.description ?? "")"
+                        visitorTeamBatting = data?.batting?.filter({ batting in
+                            batting.teamID == data?.runs?.last?.teamID
+                        })
+                        
+                        localTeamBowling = data?.bowling?.filter({ bowling in
+                            bowling.teamID == data?.runs?.last?.teamID
+                        })
                     }
                     
                     let localTeamBatting = data?.batting?.filter({ batting in
                         batting.teamID == data?.runs?.first?.teamID
                     })
-                    let visitorTeamBatting = data?.batting?.filter({ batting in
-                        batting.teamID == data?.runs?.last?.teamID
-                    })
-                    
-                    let localTeamBowling = data?.bowling?.filter({ bowling in
-                        bowling.teamID == data?.runs?.last?.teamID
-                    })
                     
                     let visitorTeamBowling = data?.bowling?.filter({ bowling in
-                        bowling.teamID == data?.runs?.first?.teamID
+                        bowling.team?.code == visitorTeamCode
                     })
                     
                     let ltCellBattingModels = localTeamBatting?.compactMap({ batting in
@@ -407,6 +429,7 @@ class MatchDetailsViewModel {
                 
             case .failure(let error):
                 print(error)
+                self.error = error
             }
         }
     }

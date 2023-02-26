@@ -14,89 +14,9 @@
             filePath = "Cricthusiast/Utilities/Services.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "198"
-            endingLineNumber = "198"
-            landmarkName = "fetchRecentMatchFixture(completion:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "54BDA905-5EF5-4EF1-AAC8-8F1271B56A96"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Cricthusiast/Utilities/Services.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "183"
-            endingLineNumber = "183"
+            startingLineNumber = "202"
+            endingLineNumber = "202"
             landmarkName = "fetchAllFixtures(startDate:endDate:isAscending:completion:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "FD10AFAC-DA13-40C0-9497-ADE3E55B1DBA"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Cricthusiast/Utilities/Services.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "135"
-            endingLineNumber = "135"
-            landmarkName = "fetchData(from:using:completion:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "548EABD3-962E-48A9-A6E8-2DE46CEA98FB"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Cricthusiast/Utilities/Services.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "133"
-            endingLineNumber = "133"
-            landmarkName = "fetchData(from:using:completion:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "8AC655E4-5AC6-4DD1-887D-94CD40A72ED4"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Cricthusiast/Utilities/Services.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "166"
-            endingLineNumber = "166"
-            landmarkName = "fetchAllFixtures(startDate:endDate:isAscending:completion:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "1E5E0D93-4BD1-48BA-AC62-6F563407B7E0"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Cricthusiast/Utilities/Services.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "159"
-            endingLineNumber = "159"
-            landmarkName = "fetchFixtureById(id:completion:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -328,42 +248,10 @@
             filePath = "Cricthusiast/Utilities/Services.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "105"
-            endingLineNumber = "105"
-            landmarkName = "fetchPlayerById(id:completion:)"
+            startingLineNumber = "109"
+            endingLineNumber = "109"
+            landmarkName = "fetchAllPlayers(completion:)"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "A86799CD-469F-44C4-81ED-69D83D747DC8 - 18b8ef0ec6c27e21"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Cricthusiast.ServiceHandler.fetchPlayerById(id: Swift.Int, completion: (Swift.Result&lt;Swift.Optional&lt;Cricthusiast.PlayerInfoModel&gt;, Swift.Error&gt;) -&gt; ()) -&gt; ()"
-                  moduleName = "Cricthusiast"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/absarrahman/Desktop/TANZILA/Final%20V7/Cricthusiast/Cricthusiast/Utilities/Services.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "105"
-                  endingLineNumber = "105"
-                  offsetFromSymbolStart = "360">
-               </Location>
-               <Location
-                  uuid = "A86799CD-469F-44C4-81ED-69D83D747DC8 - 6ac5f28eeb47e4fd"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Alamofire.DataResponse&lt;Swift.Optional&lt;Foundation.Data&gt;, Alamofire.AFError&gt;) -&gt; () in Cricthusiast.ServiceHandler.fetchPlayerById(id: Swift.Int, completion: (Swift.Result&lt;Swift.Optional&lt;Cricthusiast.PlayerInfoModel&gt;, Swift.Error&gt;) -&gt; ()) -&gt; ()"
-                  moduleName = "Cricthusiast"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/absarrahman/Desktop/TANZILA/Final%20V7/Cricthusiast/Cricthusiast/Utilities/Services.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "106"
-                  endingLineNumber = "106"
-                  offsetFromSymbolStart = "220">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -376,9 +264,502 @@
             filePath = "Cricthusiast/Utilities/Services.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "111"
-            endingLineNumber = "111"
+            startingLineNumber = "115"
+            endingLineNumber = "115"
             landmarkName = "fetchPlayerById(id:completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "94E55251-57C9-454B-985B-1430EA024105"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Cricthusiast/ViewModels/MatchViewModel/MatchDetailsViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "108"
+            endingLineNumber = "108"
+            landmarkName = "fetchFixtureDetailsFrom(id:completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "29176263-1E55-4008-8A49-843BAC645353"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Cricthusiast/ViewModels/MatchViewModel/MatchDetailsViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "93"
+            endingLineNumber = "93"
+            landmarkName = "fetchFixtureDetailsFrom(id:completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "B7479F7C-CBDA-4A1D-AECF-B10C36F9297D"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Cricthusiast/ViewModels/MatchViewModel/MatchDetailsViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "92"
+            endingLineNumber = "92"
+            landmarkName = "fetchFixtureDetailsFrom(id:completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "AEEAA44A-E07E-4319-9246-BCA2926F5265"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Cricthusiast/ViewModels/MatchViewModel/MatchDetailsViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "237"
+            endingLineNumber = "237"
+            landmarkName = "fetchScoreCardInfo(id:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "236D2404-24AE-4087-B8D2-23C6D9562D98"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Cricthusiast/ViewModels/MatchViewModel/MatchDetailsViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "245"
+            endingLineNumber = "245"
+            landmarkName = "fetchScoreCardInfo(id:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "6CDC228F-1599-45FE-9BDB-E286E7F7FE27"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Cricthusiast/ViewModels/MatchViewModel/MatchDetailsViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "234"
+            endingLineNumber = "234"
+            landmarkName = "fetchScoreCardInfo(id:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "B35A980D-53E6-4F3E-BCF2-443CE78278D4"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Cricthusiast/ViewModels/MatchViewModel/MatchDetailsViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "326"
+            endingLineNumber = "326"
+            landmarkName = "fetchScoreCardInfo(id:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "5FEC23C6-ED6B-4945-B40D-552FFBD12039"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Cricthusiast/ViewModels/MatchViewModel/MatchDetailsViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "328"
+            endingLineNumber = "328"
+            landmarkName = "fetchScoreCardInfo(id:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "2117575D-F8F8-427B-A7E1-8B6D037E1F95"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Cricthusiast/ViewModels/MatchViewModel/MatchDetailsViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "366"
+            endingLineNumber = "366"
+            landmarkName = "fetchScoreCardInfo(id:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "2117575D-F8F8-427B-A7E1-8B6D037E1F95 - 1f8be318975601dc"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;Swift.Optional&lt;Cricthusiast.FixtureInfoModel&gt;, Swift.Error&gt;) -&gt; () in Cricthusiast.MatchDetailsViewModel.fetchScoreCardInfo(id: Swift.Int) -&gt; ()"
+                  moduleName = "Cricthusiast"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/absarrahman/Desktop/TANZILA/FINAL%20V9/Cricthusiast/Cricthusiast/ViewModels/MatchViewModel/MatchDetailsViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "366"
+                  endingLineNumber = "366"
+                  offsetFromSymbolStart = "13424">
+               </Location>
+               <Location
+                  uuid = "2117575D-F8F8-427B-A7E1-8B6D037E1F95 - 1f8be318975601dc"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;Swift.Optional&lt;Cricthusiast.FixtureInfoModel&gt;, Swift.Error&gt;) -&gt; () in Cricthusiast.MatchDetailsViewModel.fetchScoreCardInfo(id: Swift.Int) -&gt; ()"
+                  moduleName = "Cricthusiast"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/absarrahman/Desktop/TANZILA/FINAL%20V9/Cricthusiast/Cricthusiast/ViewModels/MatchViewModel/MatchDetailsViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "366"
+                  endingLineNumber = "366"
+                  offsetFromSymbolStart = "13508">
+               </Location>
+               <Location
+                  uuid = "2117575D-F8F8-427B-A7E1-8B6D037E1F95 - ffef6df2411ce72b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #12 (Cricthusiast.Bowling) -&gt; Swift.Bool in closure #1 (Swift.Result&lt;Swift.Optional&lt;Cricthusiast.FixtureInfoModel&gt;, Swift.Error&gt;) -&gt; () in Cricthusiast.MatchDetailsViewModel.fetchScoreCardInfo(id: Swift.Int) -&gt; ()"
+                  moduleName = "Cricthusiast"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/absarrahman/Desktop/TANZILA/FINAL%20V9/Cricthusiast/Cricthusiast/ViewModels/MatchViewModel/MatchDetailsViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "367"
+                  endingLineNumber = "367"
+                  offsetFromSymbolStart = "56">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D97E95A7-F507-4401-A15E-5D148CF0F6EC"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Cricthusiast/ViewModels/MatchViewModel/MatchDetailsViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "370"
+            endingLineNumber = "370"
+            landmarkName = "fetchScoreCardInfo(id:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "D97E95A7-F507-4401-A15E-5D148CF0F6EC - 1f8be31897560140"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;Swift.Optional&lt;Cricthusiast.FixtureInfoModel&gt;, Swift.Error&gt;) -&gt; () in Cricthusiast.MatchDetailsViewModel.fetchScoreCardInfo(id: Swift.Int) -&gt; ()"
+                  moduleName = "Cricthusiast"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/absarrahman/Desktop/TANZILA/FINAL%20V9/Cricthusiast/Cricthusiast/ViewModels/MatchViewModel/MatchDetailsViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "370"
+                  endingLineNumber = "370"
+                  offsetFromSymbolStart = "13716">
+               </Location>
+               <Location
+                  uuid = "D97E95A7-F507-4401-A15E-5D148CF0F6EC - 1f8be31897560140"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;Swift.Optional&lt;Cricthusiast.FixtureInfoModel&gt;, Swift.Error&gt;) -&gt; () in Cricthusiast.MatchDetailsViewModel.fetchScoreCardInfo(id: Swift.Int) -&gt; ()"
+                  moduleName = "Cricthusiast"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/absarrahman/Desktop/TANZILA/FINAL%20V9/Cricthusiast/Cricthusiast/ViewModels/MatchViewModel/MatchDetailsViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "370"
+                  endingLineNumber = "370"
+                  offsetFromSymbolStart = "13760">
+               </Location>
+               <Location
+                  uuid = "D97E95A7-F507-4401-A15E-5D148CF0F6EC - 2d23091b9dea3482"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #13 (Cricthusiast.Batting) -&gt; Swift.Optional&lt;Cricthusiast.ScoreTableViewCellModel&gt; in closure #1 (Swift.Result&lt;Swift.Optional&lt;Cricthusiast.FixtureInfoModel&gt;, Swift.Error&gt;) -&gt; () in Cricthusiast.MatchDetailsViewModel.fetchScoreCardInfo(id: Swift.Int) -&gt; ()"
+                  moduleName = "Cricthusiast"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/absarrahman/Desktop/TANZILA/FINAL%20V9/Cricthusiast/Cricthusiast/ViewModels/MatchViewModel/MatchDetailsViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "371"
+                  endingLineNumber = "371"
+                  offsetFromSymbolStart = "88">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "2DD0F23A-B7A6-432D-BA1B-051988A59C91"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Cricthusiast/ViewModels/MatchViewModel/MatchDetailsViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "380"
+            endingLineNumber = "380"
+            landmarkName = "fetchScoreCardInfo(id:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "2DD0F23A-B7A6-432D-BA1B-051988A59C91 - 1f8be31897561f8a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;Swift.Optional&lt;Cricthusiast.FixtureInfoModel&gt;, Swift.Error&gt;) -&gt; () in Cricthusiast.MatchDetailsViewModel.fetchScoreCardInfo(id: Swift.Int) -&gt; ()"
+                  moduleName = "Cricthusiast"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/absarrahman/Desktop/TANZILA/FINAL%20V9/Cricthusiast/Cricthusiast/ViewModels/MatchViewModel/MatchDetailsViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "380"
+                  endingLineNumber = "380"
+                  offsetFromSymbolStart = "14064">
+               </Location>
+               <Location
+                  uuid = "2DD0F23A-B7A6-432D-BA1B-051988A59C91 - 5a669fa9c717036c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #14 (Cricthusiast.Batting) -&gt; Swift.Optional&lt;Cricthusiast.ScoreTableViewCellModel&gt; in closure #1 (Swift.Result&lt;Swift.Optional&lt;Cricthusiast.FixtureInfoModel&gt;, Swift.Error&gt;) -&gt; () in Cricthusiast.MatchDetailsViewModel.fetchScoreCardInfo(id: Swift.Int) -&gt; ()"
+                  moduleName = "Cricthusiast"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/absarrahman/Desktop/TANZILA/FINAL%20V9/Cricthusiast/Cricthusiast/ViewModels/MatchViewModel/MatchDetailsViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "382"
+                  endingLineNumber = "382"
+                  offsetFromSymbolStart = "88">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "8B6012B2-A49F-4D44-85E7-C5B98C831F0C"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Cricthusiast/ViewModels/MatchViewModel/MatchDetailsViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "395"
+            endingLineNumber = "395"
+            landmarkName = "fetchScoreCardInfo(id:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "8B6012B2-A49F-4D44-85E7-C5B98C831F0C - 1f8be31897561d99"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;Swift.Optional&lt;Cricthusiast.FixtureInfoModel&gt;, Swift.Error&gt;) -&gt; () in Cricthusiast.MatchDetailsViewModel.fetchScoreCardInfo(id: Swift.Int) -&gt; ()"
+                  moduleName = "Cricthusiast"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/absarrahman/Desktop/TANZILA/FINAL%20V9/Cricthusiast/Cricthusiast/ViewModels/MatchViewModel/MatchDetailsViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "395"
+                  endingLineNumber = "395"
+                  offsetFromSymbolStart = "14412">
+               </Location>
+               <Location
+                  uuid = "8B6012B2-A49F-4D44-85E7-C5B98C831F0C - db8188bf40445675"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #15 (Cricthusiast.Bowling) -&gt; Swift.Optional&lt;Cricthusiast.ScoreTableViewCellModel&gt; in closure #1 (Swift.Result&lt;Swift.Optional&lt;Cricthusiast.FixtureInfoModel&gt;, Swift.Error&gt;) -&gt; () in Cricthusiast.MatchDetailsViewModel.fetchScoreCardInfo(id: Swift.Int) -&gt; ()"
+                  moduleName = "Cricthusiast"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/absarrahman/Desktop/TANZILA/FINAL%20V9/Cricthusiast/Cricthusiast/ViewModels/MatchViewModel/MatchDetailsViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "397"
+                  endingLineNumber = "397"
+                  offsetFromSymbolStart = "88">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "F80BEEEE-A9E7-44CE-828D-B7B898A78BE2"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Cricthusiast/ViewModels/MatchViewModel/MatchDetailsViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "410"
+            endingLineNumber = "410"
+            landmarkName = "fetchScoreCardInfo(id:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "F80BEEEE-A9E7-44CE-828D-B7B898A78BE2 - 1f8be31897561ba8"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;Swift.Optional&lt;Cricthusiast.FixtureInfoModel&gt;, Swift.Error&gt;) -&gt; () in Cricthusiast.MatchDetailsViewModel.fetchScoreCardInfo(id: Swift.Int) -&gt; ()"
+                  moduleName = "Cricthusiast"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/absarrahman/Desktop/TANZILA/FINAL%20V9/Cricthusiast/Cricthusiast/ViewModels/MatchViewModel/MatchDetailsViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "410"
+                  endingLineNumber = "410"
+                  offsetFromSymbolStart = "14764">
+               </Location>
+               <Location
+                  uuid = "F80BEEEE-A9E7-44CE-828D-B7B898A78BE2 - 1f8be31897561ba8"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;Swift.Optional&lt;Cricthusiast.FixtureInfoModel&gt;, Swift.Error&gt;) -&gt; () in Cricthusiast.MatchDetailsViewModel.fetchScoreCardInfo(id: Swift.Int) -&gt; ()"
+                  moduleName = "Cricthusiast"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/absarrahman/Desktop/TANZILA/FINAL%20V9/Cricthusiast/Cricthusiast/ViewModels/MatchViewModel/MatchDetailsViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "410"
+                  endingLineNumber = "410"
+                  offsetFromSymbolStart = "14800">
+               </Location>
+               <Location
+                  uuid = "F80BEEEE-A9E7-44CE-828D-B7B898A78BE2 - 8c71eccab61a7c5"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #16 (Cricthusiast.Bowling) -&gt; Swift.Optional&lt;Cricthusiast.ScoreTableViewCellModel&gt; in closure #1 (Swift.Result&lt;Swift.Optional&lt;Cricthusiast.FixtureInfoModel&gt;, Swift.Error&gt;) -&gt; () in Cricthusiast.MatchDetailsViewModel.fetchScoreCardInfo(id: Swift.Int) -&gt; ()"
+                  moduleName = "Cricthusiast"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/absarrahman/Desktop/TANZILA/FINAL%20V9/Cricthusiast/Cricthusiast/ViewModels/MatchViewModel/MatchDetailsViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "412"
+                  endingLineNumber = "412"
+                  offsetFromSymbolStart = "88">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "3E6C18AA-C981-4BF2-B3C1-62D5BABA16C4"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Cricthusiast/ViewModels/MatchViewModel/MatchDetailsViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "425"
+            endingLineNumber = "425"
+            landmarkName = "fetchScoreCardInfo(id:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "1D959E1E-F94B-4916-9BBD-038978EEE671"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Cricthusiast/ViewModels/PlayersViewModels/PlayerDetailsViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "228"
+            endingLineNumber = "228"
+            landmarkName = "fetchStats(id:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C3EFF15D-A3D3-4EAA-89A8-E70993A81F36"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Cricthusiast/ViewModels/PlayersViewModels/PlayerDetailsViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "198"
+            endingLineNumber = "198"
+            landmarkName = "fetchStats(id:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D9DEDF2A-A9E8-47F7-B03A-5256FAB24801"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Cricthusiast/ViewModels/PlayersViewModels/PlayerDetailsViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "200"
+            endingLineNumber = "200"
+            landmarkName = "fetchStats(id:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D214A605-9959-42DC-8B6C-635972F3A4A1"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Cricthusiast/ViewControllers/TabbarVC/MatchesVCs/MatchDetailsViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "105"
+            endingLineNumber = "105"
+            landmarkName = "setUpBinder()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

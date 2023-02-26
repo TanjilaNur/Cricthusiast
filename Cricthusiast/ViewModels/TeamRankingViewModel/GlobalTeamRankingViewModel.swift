@@ -9,11 +9,13 @@ import Foundation
 
 class GlobalTeamRankingViewModel {
     @Published var isLoading = false
+    @Published var error: Error?
+    
     var rankingTeamModels:[RankTVCellModel] = []
     
-    func fetchGlobalRanking() {
+    func fetchGlobalRanking(type: String) {
         isLoading = true
-        ServiceHandler.shared.fetchGlobalRanking {[weak self] result in
+        ServiceHandler.shared.fetchGlobalRanking(type: type) {[weak self] result in
             
             guard let self = self else { return }
             
@@ -22,7 +24,6 @@ class GlobalTeamRankingViewModel {
                 let matchType = data?.first(where: {
                     $0.gender == "men"
                 })
-                
                 self.rankingTeamModels = matchType?.team?.compactMap({
                     RankTVCellModel(
                         rank: $0.position ?? -1,
@@ -38,6 +39,7 @@ class GlobalTeamRankingViewModel {
             case .failure(let error):
                 print(error)
                 self.isLoading = false
+                self.error = error
             }
         }
     }

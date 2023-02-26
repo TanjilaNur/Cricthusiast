@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--News-->
+        <scene sceneID="7mk-aY-H32">
+            <objects>
+                <viewController storyboardIdentifier="NewsViewController" id="EYt-CD-XNy" customClass="NewsViewController" customModule="Cricthusiast" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8nC-g9-T0s" userLabel="RootView">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loading..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dGR-g6-0Oy" userLabel="Loading">
+                                <rect key="frame" x="150" y="414" width="93" height="24"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="qrH-jG-eFf">
+                                <rect key="frame" x="0.0" y="99.333333333333314" width="393" height="752.66666666666674"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="CustomTableViewCellForNews" id="zJv-CB-ZQ8">
+                                        <rect key="frame" x="0.0" y="50" width="393" height="43.666667938232422"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="zJv-CB-ZQ8" id="Rir-Lj-3nd">
+                                            <rect key="frame" x="0.0" y="0.0" width="393" height="43.666667938232422"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="News" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OOh-r5-jrw">
+                                <rect key="frame" x="10" y="59.000000000000007" width="373" height="25.333333333333336"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="BWS-nw-QWQ"/>
+                        <color key="backgroundColor" name="primary"/>
+                        <constraints>
+                            <constraint firstItem="OOh-r5-jrw" firstAttribute="top" secondItem="BWS-nw-QWQ" secondAttribute="top" id="29c-KI-8oN"/>
+                            <constraint firstItem="qrH-jG-eFf" firstAttribute="top" secondItem="OOh-r5-jrw" secondAttribute="bottom" constant="15" id="FzN-Me-w2l"/>
+                            <constraint firstItem="OOh-r5-jrw" firstAttribute="leading" secondItem="BWS-nw-QWQ" secondAttribute="leading" constant="10" id="JSF-PB-1U3"/>
+                            <constraint firstItem="qrH-jG-eFf" firstAttribute="leading" secondItem="BWS-nw-QWQ" secondAttribute="leading" id="L2Y-r4-BUX"/>
+                            <constraint firstItem="OOh-r5-jrw" firstAttribute="centerX" secondItem="8nC-g9-T0s" secondAttribute="centerX" id="PnI-O5-PCe"/>
+                            <constraint firstItem="qrH-jG-eFf" firstAttribute="centerX" secondItem="8nC-g9-T0s" secondAttribute="centerX" id="ZJZ-fo-ps4"/>
+                            <constraint firstItem="dGR-g6-0Oy" firstAttribute="centerX" secondItem="8nC-g9-T0s" secondAttribute="centerX" id="is9-3c-aJQ"/>
+                            <constraint firstAttribute="bottom" secondItem="qrH-jG-eFf" secondAttribute="bottom" id="jWT-Ki-oMA"/>
+                            <constraint firstItem="dGR-g6-0Oy" firstAttribute="centerY" secondItem="8nC-g9-T0s" secondAttribute="centerY" id="wjJ-qX-G0m"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="News" image="newspaper.fill" catalog="system" id="Zk9-Qp-B0d"/>
+                    <navigationItem key="navigationItem" id="tee-iY-27B"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="asE-3g-tj1" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2930.5343511450383" y="-139.43661971830986"/>
+        </scene>
+        <!--News Web View Controller-->
+        <scene sceneID="YYd-6p-Pfm">
+            <objects>
+                <viewController storyboardIdentifier="NewsWebViewController" id="ZYl-bl-k9T" customClass="NewsWebViewController" customModule="Cricthusiast" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="B3n-sy-gfb">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KXR-RN-7Ds">
+                                <rect key="frame" x="0.0" y="59" width="393" height="759"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="pdn-JZ-iAi"/>
+                        <color key="backgroundColor" name="primary"/>
+                        <constraints>
+                            <constraint firstItem="pdn-JZ-iAi" firstAttribute="trailing" secondItem="KXR-RN-7Ds" secondAttribute="trailing" id="5QC-SR-zrH"/>
+                            <constraint firstItem="KXR-RN-7Ds" firstAttribute="top" secondItem="pdn-JZ-iAi" secondAttribute="top" id="JJt-pI-a43"/>
+                            <constraint firstItem="KXR-RN-7Ds" firstAttribute="leading" secondItem="pdn-JZ-iAi" secondAttribute="leading" id="RDl-ea-0c1"/>
+                            <constraint firstItem="pdn-JZ-iAi" firstAttribute="bottom" secondItem="KXR-RN-7Ds" secondAttribute="bottom" id="zUZ-iL-vyh"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="0tS-ib-UxH"/>
+                    <connections>
+                        <outlet property="webView" destination="KXR-RN-7Ds" id="krW-uD-aAp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9wq-Y9-PMf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2932" y="1306"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="newspaper.fill" catalog="system" width="128" height="112"/>
+        <namedColor name="primary">
+            <color red="0.050999999046325684" green="0.15299999713897705" blue="0.22400000691413879" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

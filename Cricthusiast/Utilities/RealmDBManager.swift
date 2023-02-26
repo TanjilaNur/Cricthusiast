@@ -39,7 +39,6 @@ class RealmDBManager {
         for result in results {
             players.append(result)
         }
-        
         return players
     }
 }
