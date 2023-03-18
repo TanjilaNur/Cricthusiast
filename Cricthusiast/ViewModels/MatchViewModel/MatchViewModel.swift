@@ -152,9 +152,11 @@ class MatchViewModel{
                             visitorTeamImageUrl: $0.visitorteam?.imagePath ?? "",
                             tag: tag)
                     })
-                    for i in 0...filteredFixtures.count - 1 {
-                        let fixtureLocalModel = filteredFixtures[i]
-                        NotificationHandler.pushToLocalNotification(model: LocalNotificationModel(id: fixtureLocalModel.id?.description ?? "", title: "\(fixtureLocalModel.localteam?.code ?? "") vs \(fixtureLocalModel.visitorteam?.code ?? "")", subtitle: "", notificationTime: fixtureLocalModel.startingAt ?? ""))
+                    if !(filteredFixtures.isEmpty) {
+                        for i in 0...filteredFixtures.count - 1 {
+                            let fixtureLocalModel = filteredFixtures[i]
+                            NotificationHandler.pushToLocalNotification(model: LocalNotificationModel(id: fixtureLocalModel.id?.description ?? "", title: "\(fixtureLocalModel.localteam?.code ?? "") vs \(fixtureLocalModel.visitorteam?.code ?? "")", subtitle: "", notificationTime: fixtureLocalModel.startingAt ?? ""))
+                        }
                     }
                     self.isLoading = false
                 case .failure(let failure):
